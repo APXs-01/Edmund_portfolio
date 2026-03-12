@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S. Edmund Augustine | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== CURSOR ===== -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-text">EA</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-grid-overlay"></div>
+
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">
+        <span class="name-line">S. Edmund</span>
+        <span class="name-line accent">Augustine</span>
+      </h1>
+      <div class="hero-role">
+        <span class="role-prefix">I'm a </span>
+        <span class="typed-text" id="typedText"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-sub">
+        3rd Year IT Undergraduate at SLIIT · Specialising in Interactive Media
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+        <a href="#about" class="btn btn-outline">Learn More</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/edmund-augustine-622a48385" target="_blank" class="social-icon" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/Edmund0007" target="_blank" class="social-icon" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:edmundaugustine12@gmail.com" class="social-icon" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-image-wrapper">
+      <div class="hero-image-glow"></div>
+      <div class="hero-image-ring ring-1"></div>
+      <div class="hero-image-ring ring-2"></div>
+      <div class="hero-image-ring ring-3"></div>
+      <div class="hero-img-container">
+        <img src="Img/IMG-20260308-WA0007.jpg" alt="S. Edmund Augustine" class="hero-img" />
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Get To Know</p>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-side">
+          <div class="about-img-frame">
+            <img src="Img/IMG-20260308-WA0009.jpg" alt="Edmund Augustine" class="about-img" />
+            <div class="about-img-border"></div>
+            <div class="about-img-dot dot-tl"></div>
+            <div class="about-img-dot dot-br"></div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number">3<sup>rd</sup></span>
+              <span class="stat-label">Year Student</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">IT</span>
+              <span class="stat-label">BSc (Hons)</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">IM</span>
+              <span class="stat-label">Specialisation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content-side">
+          <h3 class="about-heading">Crafting Digital Experiences</h3>
+          <p class="about-text">
+            I'm <strong>S. Edmund Augustine</strong>, a passionate and driven undergraduate at
+            <strong>SLIIT (Sri Lanka Institute of Information Technology)</strong>, pursuing a
+            BSc (Hons) in Information Technology with a specialisation in <strong>Interactive Media</strong>.
+          </p>
+          <p class="about-text">
+            Currently in my 3rd year, I blend technical knowledge with creative vision to build
+            engaging digital experiences. My focus lies at the intersection of design and
+            technology — crafting interfaces that are not just functional, but truly memorable.
+          </p>
+
+          <div class="about-info-grid">
+            <div class="info-item">
+              <i class="fas fa-user-graduate"></i>
+              <div>
+                <span class="info-label">University</span>
+                <span class="info-value">SLIIT</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-book-open"></i>
+              <div>
+                <span class="info-label">Degree</span>
+                <span class="info-value">BSc (Hons) IT</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <span class="info-label">Email</span>
+                <span class="info-value">edmundaugustine12@gmail.com</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <span class="info-label">Phone</span>
+                <span class="info-value">0759948727</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-cta">
+            <a href="#contact" class="btn btn-primary">Contact Me</a>
+            <a href="https://github.com/Edmund0007" target="_blank" class="btn btn-ghost">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">What I Know</p>
+        <h2 class="section-title">My <span class="accent">Skills</span></h2>
+      </div>
+
+      <div class="skills-layout">
+        <div class="skills-bars-col">
+          <h3 class="skills-col-title">Technical Proficiency</h3>
+          <div class="skill-bar-item" data-skill="HTML / CSS" data-level="90">
+            <div class="skill-bar-info">
+              <span class="skill-name">HTML / CSS</span>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="90"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item" data-skill="JavaScript" data-level="75">
+            <div class="skill-bar-info">
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-percent">75%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="75"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item" data-skill="UI/UX Design" data-level="80">
+            <div class="skill-bar-info">
+              <span class="skill-name">UI/UX Design</span>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="80"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item" data-skill="Interactive Media" data-level="85">
+            <div class="skill-bar-info">
+              <span class="skill-name">Interactive Media</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="85"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item" data-skill="Java / OOP" data-level="70">
+            <div class="skill-bar-info">
+              <span class="skill-name">Java / OOP</span>
+              <span class="skill-percent">70%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="70"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-cards-col">
+          <h3 class="skills-col-title">Tools & Technologies</h3>
+          <div class="skill-cards-grid">
+            <div class="skill-card">
+              <div class="skill-card-icon"><i class="fab fa-figma"></i></div>
+              <span>Figma</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-icon"><i class="fab fa-adobe"></i></div>
+              <span>Adobe XD</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-icon"><i class="fab fa-git-alt"></i></div>
+              <span>Git</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-icon"><i class="fab fa-github"></i></div>
+              <span>GitHub</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-icon"><i class="fab fa-react"></i></div>
+              <span>React</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-icon"><i class="fab fa-node-js"></i></div>
+              <span>Node.js</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-icon"><i class="fas fa-database"></i></div>
+              <span>MySQL</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-icon"><i class="fab fa-bootstrap"></i></div>
+              <span>Bootstrap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="education" id="education">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">My Journey</p>
+        <h2 class="section-title">Education &amp; <span class="accent">Background</span></h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-item left reveal">
+          <div class="timeline-dot">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <span class="timeline-year">2023 – Present</span>
+              <span class="timeline-badge current">Current</span>
+            </div>
+            <h3 class="timeline-title">BSc (Hons) in Information Technology</h3>
+            <h4 class="timeline-org">SLIIT – Sri Lanka Institute of Information Technology</h4>
+            <p class="timeline-desc">
+              Specialising in <strong>Interactive Media</strong>. Currently in 3rd year,
+              1st semester. Gaining expertise in web development, UI/UX, interactive
+              design, and software engineering principles.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Interactive Media</span>
+              <span class="tag">Web Development</span>
+              <span class="tag">Software Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item right reveal">
+          <div class="timeline-dot">
+            <i class="fas fa-school"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <span class="timeline-year">A/L Studies</span>
+            </div>
+            <h3 class="timeline-title">Advanced Level Examinations</h3>
+            <h4 class="timeline-org">Secondary Education, Sri Lanka</h4>
+            <p class="timeline-desc">
+              Completed Advanced Level studies with a focus on the sciences and
+              technology stream, building a strong analytical foundation before
+              entering higher education.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Science Stream</span>
+              <span class="tag">Technology</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item left reveal">
+          <div class="timeline-dot">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <span class="timeline-year">Ongoing</span>
+            </div>
+            <h3 class="timeline-title">Self-Learning & Projects</h3>
+            <h4 class="timeline-org">GitHub – Edmund0007</h4>
+            <p class="timeline-desc">
+              Continuously building projects and expanding skills in front-end
+              development, interactive design, and modern web technologies through
+              hands-on practice and open-source contributions.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Open Source</span>
+              <span class="tag">Personal Projects</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">A Glimpse</p>
+        <h2 class="section-title">Photo <span class="accent">Gallery</span></h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item g-item-1">
+          <img src="Img/IMG-20260308-WA0007.jpg" alt="Edmund - Studio" />
+          <div class="gallery-overlay"><span>Studio Shot</span></div>
+        </div>
+        <div class="gallery-item g-item-2">
+          <img src="Img/IMG-20260308-WA0008.jpg" alt="Edmund - Outdoor" />
+          <div class="gallery-overlay"><span>Outdoor</span></div>
+        </div>
+        <div class="gallery-item g-item-3">
+          <img src="Img/IMG-20260308-WA0009.jpg" alt="Edmund - Portrait" />
+          <div class="gallery-overlay"><span>Portrait</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Let's Connect</p>
+        <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-side">
+          <p class="contact-intro">
+            I'm always open to new opportunities, collaborations, and conversations.
+            Whether you have a project in mind or just want to say hi — my inbox is open!
+          </p>
+
+          <div class="contact-cards">
+            <a href="mailto:edmundaugustine12@gmail.com" class="contact-card">
+              <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-card-label">Email</span>
+                <span class="contact-card-value">edmundaugustine12@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:0759948727" class="contact-card">
+              <div class="contact-card-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <span class="contact-card-label">Phone</span>
+                <span class="contact-card-value">0759948727</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/edmund-augustine-622a48385" target="_blank" class="contact-card">
+              <div class="contact-card-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <span class="contact-card-label">LinkedIn</span>
+                <span class="contact-card-value">Edmund Augustine</span>
+              </div>
+            </a>
+            <a href="https://github.com/Edmund0007" target="_blank" class="contact-card">
+              <div class="contact-card-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <span class="contact-card-label">GitHub</span>
+                <span class="contact-card-value">Edmund0007</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-side">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Let's collaborate!" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i> Message sent successfully!
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span class="logo-text">EA</span>
+          <p>S. Edmund Augustine</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/edmund-augustine-622a48385" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/Edmund0007" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:edmundaugustine12@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 S. Edmund Augustine. Crafted with <i class="fas fa-heart"></i> and passion.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
