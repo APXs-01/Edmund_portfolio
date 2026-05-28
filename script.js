@@ -277,3 +277,103 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
    NAVBAR ACTIVE ON LOAD
    ============================ */
 updateActiveNavLink();
+
+/* ============================
+   PROJECTS FILTER
+   ============================ */
+const filterBtns = document.querySelectorAll('.filter-btn');
+const projectCards = document.querySelectorAll('.project-card');
+
+// Apply initial filter on load
+projectCards.forEach(card => {
+  if (card.dataset.category !== 'figma') card.classList.add('hidden');
+});
+
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    projectCards.forEach(card => {
+      if (card.dataset.category === filter) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  });
+});
+
+/* ============================
+   LIGHTBOX
+   ============================ */
+const lightbox    = document.getElementById('lightbox');
+const lightboxImg  = document.getElementById('lightboxImg');
+const lightboxTitle = document.getElementById('lightboxTitle');
+const lightboxCat  = document.getElementById('lightboxCat');
+const lightboxClose = document.getElementById('lightboxClose');
+const lightboxPrev  = document.getElementById('lightboxPrev');
+const lightboxNext  = document.getElementById('lightboxNext');
+
+let currentLightboxIndex = 0;
+let visibleCards = [];
+
+function openLightbox(index) {
+  visibleCards = [...document.querySelectorAll('.project-card:not(.hidden)')];
+  currentLightboxIndex = index;
+  updateLightboxContent();
+  lightbox.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function updateLightboxContent() {
+  const card = visibleCards[currentLightboxIndex];
+  const img   = card.querySelector('img');
+  const title = card.querySelector('.project-title').textContent;
+  const cat   = card.querySelector('.project-cat').textContent;
+  lightboxImg.style.opacity = '0';
+  setTimeout(() => {
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightboxTitle.textContent = title;
+    lightboxCat.textContent   = cat;
+    lightboxImg.style.opacity = '1';
+  }, 150);
+}
+
+function closeLightbox() {
+  lightbox.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+lightboxClose.addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+
+lightboxPrev.addEventListener('click', () => {
+  currentLightboxIndex = (currentLightboxIndex - 1 + visibleCards.length) % visibleCards.length;
+  updateLightboxContent();
+});
+lightboxNext.addEventListener('click', () => {
+  currentLightboxIndex = (currentLightboxIndex + 1) % visibleCards.length;
+  updateLightboxContent();
+});
+
+document.addEventListener('keydown', e => {
+  if (!lightbox.classList.contains('open')) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowLeft') {
+    currentLightboxIndex = (currentLightboxIndex - 1 + visibleCards.length) % visibleCards.length;
+    updateLightboxContent();
+  }
+  if (e.key === 'ArrowRight') {
+    currentLightboxIndex = (currentLightboxIndex + 1) % visibleCards.length;
+    updateLightboxContent();
+  }
+});
+
+projectCards.forEach(card => {
+  card.addEventListener('click', () => {
+    visibleCards = [...document.querySelectorAll('.project-card:not(.hidden)')];
+    openLightbox(visibleCards.indexOf(card));
+  });
+});

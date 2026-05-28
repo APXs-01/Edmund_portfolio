@@ -26,6 +26,7 @@
       <li><a href="#about" class="nav-link">About</a></li>
       <li><a href="#skills" class="nav-link">Skills</a></li>
       <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
       <li><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -353,29 +354,333 @@
     </div>
   </section>
 
-  <!-- ===== GALLERY ===== -->
-  <section class="gallery-section">
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects" id="projects">
     <div class="container">
       <div class="section-header">
-        <p class="section-label">A Glimpse</p>
-        <h2 class="section-title">Photo <span class="accent">Gallery</span></h2>
+        <p class="section-label">My Work</p>
+        <h2 class="section-title">Creative <span class="accent">Projects</span></h2>
       </div>
-      <div class="gallery-grid">
-        <div class="gallery-item g-item-1">
-          <img src="Img/IMG-20260308-WA0007.jpg" alt="Edmund - Studio" />
-          <div class="gallery-overlay"><span>Studio Shot</span></div>
+
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="figma">UI / UX</button>
+        <button class="filter-btn" data-filter="photoshop">Photoshop</button>
+        <button class="filter-btn" data-filter="illustrator">Illustrator</button>
+        <button class="filter-btn" data-filter="tshirt">T-Shirts</button>
+        <button class="filter-btn" data-filter="product">Product Design</button>
+        <button class="filter-btn" data-filter="character">Character Art</button>
+        <button class="filter-btn" data-filter="digital">Digital Art</button>
+        <button class="filter-btn" data-filter="canva">Canva</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- UI/UX – Figma -->
+        <div class="project-card reveal" data-category="figma">
+          <img src="Img/figma/Untitled Project (Copy).png" alt="UI Design Concept" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">UI Design Concept</span>
+            <span class="project-cat">Figma</span>
+          </div>
         </div>
-        <div class="gallery-item g-item-2">
-          <img src="Img/IMG-20260308-WA0008.jpg" alt="Edmund - Outdoor" />
-          <div class="gallery-overlay"><span>Outdoor</span></div>
+        <div class="project-card reveal" data-category="figma">
+          <img src="Img/figma/Stack Motion Product Video Kittl Flows - stacked product.png" alt="Stack Motion Design" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Stack Motion Design</span>
+            <span class="project-cat">Figma</span>
+          </div>
         </div>
-        <div class="gallery-item g-item-3">
-          <img src="Img/IMG-20260308-WA0009.jpg" alt="Edmund - Portrait" />
-          <div class="gallery-overlay"><span>Portrait</span></div>
+        <div class="project-card reveal" data-category="figma">
+          <img src="Img/figma/Stack Motion Product Video Kittl Flows - illustrationImage.png" alt="Product Illustration" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Product Illustration</span>
+            <span class="project-cat">Figma</span>
+          </div>
         </div>
+
+        <!-- Photoshop -->
+        <div class="project-card reveal" data-category="photoshop">
+          <img src="Img/Photoshop/Untitled Project (Copy) - Burger Shop grand Opening.png" alt="Burger Shop Grand Opening" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Burger Shop Grand Opening</span>
+            <span class="project-cat">Photoshop</span>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="photoshop">
+          <img src="Img/Photoshop/Untitled Project (Copy) - Y2K Hip-Hop Album Covers.png" alt="Y2K Hip-Hop Album Cover" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Y2K Hip-Hop Album Cover</span>
+            <span class="project-cat">Photoshop</span>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="photoshop">
+          <img src="Img/Photoshop/Untitled Project (Copy) - Rebel Angle Streetwear.png" alt="Rebel Angle Streetwear" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Rebel Angle Streetwear</span>
+            <span class="project-cat">Photoshop</span>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="photoshop">
+          <img src="Img/Photoshop/Untitled Project (Copy) - ZEUS T.png" alt="Zeus Design" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Zeus Design</span>
+            <span class="project-cat">Photoshop</span>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="photoshop">
+          <img src="Img/Photoshop/Untitled Project (Copy) - Broken.png" alt="Broken" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Broken</span>
+            <span class="project-cat">Photoshop</span>
+          </div>
+        </div>
+
+        <!-- Illustrator -->
+        <div class="project-card reveal" data-category="illustrator">
+          <img src="Img/illustrator/fresh-red-hot-chilli-pepper.png" alt="Chilli Pepper Illustration" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Chilli Pepper</span>
+            <span class="project-cat">Illustrator</span>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="illustrator">
+          <img src="Img/illustrator/Untitled Project (Copy) - INNOSPARK.png" alt="INNOSPARK Logo" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">INNOSPARK Logo</span>
+            <span class="project-cat">Illustrator</span>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="illustrator">
+          <img src="Img/illustrator/logos(Animals).png" alt="Animal Logos" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Animal Logos</span>
+            <span class="project-cat">Illustrator</span>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="illustrator">
+          <img src="Img/illustrator/SLIIT.png" alt="SLIIT Illustration" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">SLIIT Illustration</span>
+            <span class="project-cat">Illustrator</span>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="illustrator">
+          <img src="Img/illustrator/Batch.png" alt="Batch Design" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Batch Design</span>
+            <span class="project-cat">Illustrator</span>
+          </div>
+        </div>
+
+        <!-- T-Shirts -->
+        <div class="project-card reveal" data-category="tshirt">
+          <img src="Img/T shirt/Untitled Project (Copy) - STOREX AESTHETIC T.png" alt="Storex Aesthetic Tee" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Storex Aesthetic Tee</span>
+            <span class="project-cat">T-Shirt</span>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="tshirt">
+          <img src="Img/T shirt/Untitled Project (Copy) - MSCLUB T.png" alt="MSCLUB Tee" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">MSCLUB Tee</span>
+            <span class="project-cat">T-Shirt</span>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="tshirt">
+          <img src="Img/T shirt/Black T.png" alt="Black Tee Mockup" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Black Tee Mockup</span>
+            <span class="project-cat">T-Shirt</span>
+          </div>
+        </div>
+
+        <!-- Product Design -->
+        <div class="project-card reveal" data-category="product">
+          <img src="Img/Product designing/Cup Prototype.jpeg" alt="Cup Prototype" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Cup Prototype</span>
+            <span class="project-cat">Product Design</span>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="product">
+          <img src="Img/Product designing/Box dieline FINISHED Package.png" alt="Package Design" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Package Design</span>
+            <span class="project-cat">Product Design</span>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="product">
+          <img src="Img/Product designing/Sticker.png" alt="Sticker Design" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Sticker Design</span>
+            <span class="project-cat">Product Design</span>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="product">
+          <img src="Img/Product designing/Inno.png" alt="Inno Branding" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Inno Branding</span>
+            <span class="project-cat">Product Design</span>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="product">
+          <img src="Img/Product designing/inno2.png" alt="Inno Branding II" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Inno Branding II</span>
+            <span class="project-cat">Product Design</span>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="product">
+          <img src="Img/Product designing/box.png" alt="Box Design" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Box Design</span>
+            <span class="project-cat">Product Design</span>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="product">
+          <img src="Img/Product designing/Package Sample Design.png" alt="Package Sample" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Package Sample</span>
+            <span class="project-cat">Product Design</span>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="product">
+          <img src="Img/Product designing/Box dieline Final.png" alt="Box Dieline Final" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Box Dieline Final</span>
+            <span class="project-cat">Product Design</span>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="product">
+          <img src="Img/Product designing/Box dieline 01.png" alt="Box Dieline 01" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Box Dieline 01</span>
+            <span class="project-cat">Product Design</span>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="product">
+          <img src="Img/Product designing/Box dieline off 01.png" alt="Box Dieline Offset" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Box Dieline Offset</span>
+            <span class="project-cat">Product Design</span>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="product">
+          <img src="Img/Product designing/Rotated Logo.png" alt="Rotated Logo" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Rotated Logo</span>
+            <span class="project-cat">Product Design</span>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="product">
+          <img src="Img/Product designing/Icon Logo.png" alt="Icon Logo" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Icon Logo</span>
+            <span class="project-cat">Product Design</span>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="product">
+          <img src="Img/Product designing/111.jpeg" alt="Product Design" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Product Design</span>
+            <span class="project-cat">Product Design</span>
+          </div>
+        </div>
+
+        <!-- Character Art -->
+        <div class="project-card reveal" data-category="character">
+          <img src="Img/character designing/Bunny.jpeg" alt="Bunny Character" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Bunny Character</span>
+            <span class="project-cat">Character Art</span>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="character">
+          <img src="Img/character designing/car.png" alt="Car Illustration" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Car Illustration</span>
+            <span class="project-cat">Character Art</span>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="character">
+          <img src="Img/character designing/bot.png" alt="Bot Character" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Bot Character</span>
+            <span class="project-cat">Character Art</span>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="character">
+          <img src="Img/character designing/dog.png" alt="Dog Character" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Dog Character</span>
+            <span class="project-cat">Character Art</span>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="character">
+          <img src="Img/character designing/C1.png" alt="Character Design" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Character Design</span>
+            <span class="project-cat">Character Art</span>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="character">
+          <img src="Img/character designing/B1.jpeg" alt="Illustration Series" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Illustration Series</span>
+            <span class="project-cat">Character Art</span>
+          </div>
+        </div>
+
+        <!-- Digital Art -->
+        <div class="project-card reveal" data-category="digital">
+          <img src="Img/Digital Arts/penup_20251127_160826.jpg" alt="Digital Artwork I" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Digital Artwork I</span>
+            <span class="project-cat">Digital Art</span>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="digital">
+          <img src="Img/Digital Arts/penup_20251128_220036.jpg" alt="Digital Artwork II" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">Digital Artwork II</span>
+            <span class="project-cat">Digital Art</span>
+          </div>
+        </div>
+
+        <!-- Canva -->
+        <div class="project-card reveal" data-category="canva">
+          <img src="Img/canva/HIGH-END DRESSED (1).png" alt="High-End Fashion" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">High-End Fashion</span>
+            <span class="project-cat">Canva</span>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="canva">
+          <img src="Img/canva/Blue Simple Professional UXUI Designer LinkedIn Banner (4).png" alt="LinkedIn Banner" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-title">LinkedIn Banner</span>
+            <span class="project-cat">Canva</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+    <button class="lightbox-prev" id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+    <button class="lightbox-next" id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightboxImg" class="lightbox-img" />
+      <div class="lightbox-info">
+        <span class="lightbox-title" id="lightboxTitle"></span>
+        <span class="lightbox-cat" id="lightboxCat"></span>
+      </div>
+    </div>
+  </div>
 
   <!-- ===== CONTACT ===== -->
   <section class="contact" id="contact">
@@ -469,6 +774,7 @@
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#education">Education</a>
+          <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </div>
         <div class="footer-socials">
